@@ -1,7 +1,7 @@
 #  Rede Gerando Futuro 🌳
 
 <p align="center">
-  <img src="assets/images/logo.png" alt="Logo da Rede Gerando Futuro" width="250">
+  <img src="public/assets/images/logo.png" alt="Logo da Rede Gerando Futuro" width="250">
 </p>
 
 
