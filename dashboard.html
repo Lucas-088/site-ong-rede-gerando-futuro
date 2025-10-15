@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Rede Gerando Futuro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-nav container">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/images/logo.png" alt="Logo da Rede Gerando Futuro">
+                <span>Rede Gerando Futuro</span>
+            </a>
+            </nav>
+    </header>
+
+    <main class="dashboard-main">
+        <div class="container">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+                <h1>Dashboard Administrativo</h1>
+                <button id="export-csv-btn" class="btn btn-secondary">Baixar Relatório (CSV)</button>
+            </div>
+            
+            <section class="metrics-grid">
+                <div class="metric-card">
+                    <h3>Total de Voluntários</h3>
+                    <p class="metric-value" id="metric-volunteers">128</p>
+                </div>
+                <div class="metric-card">
+                    <h3>Doações no Mês</h3>
+                    <p class="metric-value" id="metric-donations">R$ 1.750</p>
+                </div>
+                <div class="metric-card">
+                    <h3>Projetos Ativos</h3>
+                    <p class="metric-value" id="metric-projects">3</p>
+                </div>
+                <div class="metric-card">
+                    <h3>Pessoas Impactadas</h3>
+                    <p class="metric-value" id="metric-impact">3.750</p>
+                </div>
+            </section>
+
+            <section class="dashboard-charts">
+                <div class="chart-container-dash">
+                    <h3>Distribuição de Recursos</h3>
+                    <canvas id="graficoPizza"></canvas>
+                </div>
+                <div class="chart-container-dash">
+                    <h3>Evolução de Voluntários</h3>
+                    <canvas id="graficoLinha"></canvas>
+                </div>
+                <div class="chart-container-dash full-width">
+                    <h3>Impacto por Região</h3>
+                    <canvas id="graficoBarras"></canvas>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <footer class="main-footer">
+        <div class="container" style="text-align: center;">
+             <p>&copy; 2025 Rede Gerando Futuro - Painel Administrativo</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
