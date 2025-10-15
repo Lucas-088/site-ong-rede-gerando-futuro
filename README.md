@@ -15,7 +15,7 @@ O projeto foi construído do zero, aplicando de forma integrada conceitos de HTM
 
 ## 🚀 Link para o Projeto Online
 
-> O projeto será publicado aqui após a finalização
+> O projeto será publicado aqui após a finalização.
 
 ---
 
