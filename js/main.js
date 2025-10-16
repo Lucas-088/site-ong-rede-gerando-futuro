@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // LÓGICA DO MENU RESPONSIVO 
+    // LÓGICA DO MENU RESPONSIVO (Funciona em todas as páginas)
     const hamburgerBtn = document.getElementById('hamburger-btn');
     const navMenu = document.getElementById('nav-menu');
 
@@ -10,12 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-  
+    // LÓGICA DA PÁGINA INICIAL (Só executa se os elementos dos projetos existirem)
     const projectsContainer = document.getElementById('projects-container');
     const favoritesContainer = document.getElementById('favorites-container');
     const sortSelect = document.getElementById('sort-by');
+    const formInscricao = document.getElementById('form-inscricao-projeto');
 
-
+    // Esta verificação garante que todo o código abaixo só é executado na index.html
     if (projectsContainer && favoritesContainer && sortSelect) {
 
         const projectsData = [
@@ -87,31 +88,58 @@ document.addEventListener('DOMContentLoaded', () => {
             renderAllProjects(sortedProjects);
         };
 
+        // Adiciona os listeners de eventos
         sortSelect.addEventListener('change', updateProjectDisplay);
-
-        updateProjectDisplay();
-        renderFavorites();
-    }
-
-
-    // LÓGICA DO MODAL
-    const formInscricao = document.getElementById('form-inscricao-projeto');
-    if (formInscricao) {
-
+        
         document.body.addEventListener('click', (event) => {
             const favoriteButton = event.target.closest('.btn-favorite');
             if (favoriteButton) {
+                const projectId = parseInt(favoriteButton.dataset.projectId, 10);
+                if (favoriteProjectIds.includes(projectId)) {
+                    favoriteProjectIds = favoriteProjectIds.filter(id => id !== projectId);
+                } else {
+                    favoriteProjectIds.push(projectId);
+                }
+                saveFavorites();
+                updateProjectDisplay();
+                renderFavorites();
+                return;
             }
 
             const saibaMaisBtn = event.target.closest('.btn-saibamais');
             if (saibaMaisBtn) {
+                const projectId = parseInt(saibaMaisBtn.dataset.projectId, 10);
+                const project = projectsData.find(p => p.id === projectId);
+                
+                const modalTitle = document.getElementById('modal-title');
+                const modalDescription = document.getElementById('modal-description');
+                const projectIdInput = document.getElementById('project-id-input');
+                
+                modalTitle.textContent = project.title;
+                modalDescription.textContent = project.description;
+                projectIdInput.value = project.id;
 
+                const projectModal = new bootstrap.Modal(document.getElementById('project-details-modal'));
+                projectModal.show();
             }
         });
+
+        if (formInscricao) {
+            formInscricao.addEventListener('submit', (event) => {
+                event.preventDefault();
+                const projectId = document.getElementById('project-id-input').value;
+                const projectName = projectsData.find(p => p.id == projectId).title;
+
+                alert(`Inscrição para o projeto "${projectName}" enviada com sucesso! Obrigado por se candidatar.`);
+
+                const projectModal = bootstrap.Modal.getInstance(document.getElementById('project-details-modal'));
+                projectModal.hide();
+                formInscricao.reset();
+            });
+        }
         
-        formInscricao.addEventListener('submit', (event) => {
-
-        });
+        // Chamadas iniciais para renderizar o conteúdo
+        updateProjectDisplay();
+        renderFavorites();
     }
-
 });
