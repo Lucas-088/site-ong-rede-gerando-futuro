@@ -20,9 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
     if (projectsContainer && favoritesContainer && sortSelect) {
 
         const projectsData = [
-            { id: 1, title: "Educação para Todos", raised: 7500, image: "public/assets/images/criancas-estudando.jpg", description: "Levando educação de qualidade para comunidades carentes." },
-            { id: 2, title: "Sopa Solidária", raised: 9800, image: "public/assets/images/distribuindo-alimentos.jpg", description: "Distribuição de alimentos para pessoas em situação de rua." },
-            { id: 3, title: "Cuidando do Planeta", raised: 5200, image: "public/assets/images/plantando-arvore.jpg", description: "Projetos de reciclagem e limpeza de áreas verdes." },
+            { id: 1, title: "Educação para Todos", raised: 7500, image: "/assets/images/criancas-estudando.jpg", description: "Levando educação de qualidade para comunidades carentes." },
+            { id: 2, title: "Sopa Solidária", raised: 9800, image: "/assets/images/distribuindo-alimentos.jpg", description: "Distribuição de alimentos para pessoas em situação de rua." },
+            { id: 3, title: "Cuidando do Planeta", raised: 5200, image: "/assets/images/plantando-arvore.jpg", description: "Projetos de reciclagem e limpeza de áreas verdes." },
         ];
 
         let favoriteProjectIds = JSON.parse(localStorage.getItem('favoriteProjects')) || [];
