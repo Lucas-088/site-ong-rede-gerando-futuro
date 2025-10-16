@@ -15,14 +15,16 @@ O projeto foi construído do zero, aplicando de forma integrada conceitos de HTM
 
 ## 🚀 Link para o Projeto Online
 
-> O projeto será publicado aqui após a finalização
+O site está publicado e pode ser acedido através do seguinte link:
+
+**[https://rede-gerando-futuro.netlify.app/](https://rede-gerando-futuro.netlify.app/)**
 
 ---
 
 ## ✨ Funcionalidades Principais
 
 * **Página Inicial Interativa:** Exibição de projetos com sistema de **favoritos** (persistente com `localStorage`) e **ordenação** dinâmica.
-* **Múltiplas Páginas:** Site completo com 8 páginas públicas (Sobre, Projetos, Voluntariado, etc.).
+* **Múltiplas Páginas:** Site completo com 9 páginas (incluindo o Dashboard).
 * **Formulários Complexos:**
     * Cadastro de Voluntários com validação HTML5.
     * Formulário de Contato.
@@ -46,7 +48,7 @@ O projeto foi construído do zero, aplicando de forma integrada conceitos de HTM
 * **Chart.js:** Biblioteca para criação de gráficos interativos.
 * **PapaParse:** Biblioteca para exportação de dados para CSV.
 * **Git & GitHub:** Controle de versão e hospedagem do código.
-* **GitHub Pages:** Plataforma para deploy e publicação do site.
+* **Netlify:** Plataforma para deploy contínuo e publicação do site.
 
 ---
 
@@ -56,12 +58,12 @@ Para executar o projeto na sua máquina, siga os passos abaixo:
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/seu-usuario/seu-repositorio.git](https://github.com/seu-usuario/seu-repositorio.git)
+    git clone [https://github.com/Lucas-088/site-ong-rede-gerando-futuro.git](https://github.com/Lucas-088/site-ong-rede-gerando-futuro.git)
     ```
 
 2.  **Navegue até a pasta do projeto:**
     ```bash
-    cd nome-da-pasta-do-projeto
+    cd site-ong-rede-gerando-futuro
     ```
 
 3.  **Instale as dependências:**
