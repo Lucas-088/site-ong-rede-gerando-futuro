@@ -1,57 +1,54 @@
-#  Rede Gerando Futuro 🌳
+# 🌳 Rede Gerando Futuro
 
 <p align="center">
   <img src="public/assets/images/logo.png" alt="Logo da Rede Gerando Futuro" width="250">
 </p>
 
+> Plataforma web completa que oferece às ONGs uma presença digital profissional, permitindo gerenciar projetos, captar recursos e engajar voluntários de forma moderna e acessível.
+
+---
+
+## 🌐 Acesse o Site
+
+**[rede-gerando-futuro.netlify.app](https://rede-gerando-futuro.netlify.app)**  
+
+---
 
 ## 📝 Descrição do Projeto
 
-**Rede Gerando Futuro** é uma plataforma web completa desenvolvida como projeto final da disciplina de Desenvolvimento Front-End. O objetivo é fornecer a Organizações Não Governamentais (ONGs) uma presença digital profissional e funcional, permitindo-lhes gerir atividades, divulgar projetos, captar recursos e engajar voluntários.
-
-O projeto foi construído do zero, aplicando de forma integrada conceitos de HTML5, CSS3 avançado e JavaScript moderno, simulando um ambiente de desenvolvimento profissional.
-
----
-
-## 🚀 Link para o Projeto Online
-
-O site está publicado e pode ser acedido através do seguinte link:
-
-**[https://rede-gerando-futuro.netlify.app/](https://rede-gerando-futuro.netlify.app/)**
+**Rede Gerando Futuro** é uma plataforma web desenvolvida como projeto da disciplina de **Desenvolvimento Front-End**.  
+O objetivo é fornecer às Organizações Não Governamentais (ONGs) uma solução digital para divulgar seus projetos, gerenciar voluntários e promover ações sociais com eficiência.
 
 ---
 
-## ✨ Funcionalidades Principais
+## Funcionalidades Principais
 
-* **Página Inicial Interativa:** Exibição de projetos com sistema de **favoritos** (persistente com `localStorage`) e **ordenação** dinâmica.
-* **Múltiplas Páginas:** Site completo com 9 páginas (incluindo o Dashboard).
-* **Formulários Complexos:**
-    * Cadastro de Voluntários com validação HTML5.
-    * Formulário de Contato.
-    * Inscrição em Newsletter no rodapé.
-    * Inscrição em Projetos através de uma janela **modal**.
-* **Dashboard Administrativo:**
-    * Visualização de métricas "em tempo real" (simuladas).
-    * Gráficos interativos (Pizza, Linha e Barras) criados com **Chart.js**.
-    * Funcionalidade de **exportar relatórios** de dados para CSV.
-* **Design Responsivo:** Layout adaptável para desktops, tablets e dispositivos móveis, construído com Flexbox e Grid.
-* **Recursos de Mídia:** Incorporação de vídeo institucional, player de áudio e galeria de fotos otimizada (`loading="lazy"`).
+* 🏠 **Página Inicial Interativa:** exibição de projetos com sistema de **favoritos** (persistente com `localStorage`) e **ordenação** dinâmica.  
+* 📄 **Múltiplas Páginas:** site completo com **9 páginas** (incluindo o Dashboard).  
+* 🧾 **Formulários Complexos:**
+  * Cadastro de Voluntários com validação HTML5.  
+  * Formulário de Contato.  
+  * Inscrição em Newsletter no rodapé.  
+  * Inscrição em Projetos através de uma janela **modal**.  
+* 📊 **Dashboard Administrativo:**
+  * Visualização de métricas "em tempo real" (simuladas).  
+  * Gráficos interativos (Pizza, Linha e Barras) com **Chart.js**.  
+  * Exportação de relatórios para **CSV** com **PapaParse**.  
+* 📱 **Design Responsivo:** layout totalmente adaptável para desktop, tablet e mobile, construído com **Flexbox** e **Grid**.  
+* 🎥 **Recursos de Mídia:** vídeo institucional, player de áudio e galeria de fotos otimizada (`loading="lazy"`).  
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-* **HTML5:** Estrutura semântica e acessível.
-* **CSS3:** Design System com variáveis, Flexbox, Grid e layout responsivo.
-* **JavaScript (ES6+):** Manipulação do DOM, interatividade, gerenciamento de estado e lógica da aplicação.
-* **Vite:** Ferramenta de build para otimização e minificação de arquivos.
-* **Chart.js:** Biblioteca para criação de gráficos interativos.
-* **PapaParse:** Biblioteca para exportação de dados para CSV.
-* **Git & GitHub:** Controle de versão e hospedagem do código.
-* **Netlify:** Plataforma para deploy contínuo e publicação do site.
+
+🧩 HTML5 • CSS3 • JavaScript (ES6+)  
+
+⚙️ Vite • Chart.js • PapaParse  
+
+💻 Git & GitHub • Netlify  
 
 ---
-
 ## 🏃‍♀️ Como Executar o Projeto Localmente
 
 Para executar o projeto na sua máquina, siga os passos abaixo:
@@ -80,6 +77,7 @@ Para executar o projeto na sua máquina, siga os passos abaixo:
 
 ---
 
-## 👨‍💻 Autor
 
-Desenvolvido por **Lucas Sousa**.
+
+Desenvolvido por **Lucas Sousa**  
+ [GitHub](https://github.com/Lucas-088) • [LinkedIn](https://linkedin.com/in/sousalucas-pro)
